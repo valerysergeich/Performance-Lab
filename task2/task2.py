@@ -33,11 +33,11 @@ def main():
     ellipse_file = sys.argv[1]
     points_file = sys.argv[2]
     
-    center, radii = read_ellipse(ellipse_file)
+    center, radius = read_ellipse(ellipse_file)
     points = read_points(points_file)
     
     for point in points:
-        result = check_point(point, center, radii)
+        result = check_point(point, center, radius)
         print(result)
 
 if __name__ == "__main__":
