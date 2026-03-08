@@ -35,7 +35,7 @@ def fill_values(tests_structure, values_dict):
 
 def main():
     if len(sys.argv) != 4:
-        print("Использование: python script.py <tests.json> <values.json> <report.json>")
+        print("Usage: python script.py values.json tests.json report.json")
         sys.exit(1)
 
     tests_path = sys.argv[1]
